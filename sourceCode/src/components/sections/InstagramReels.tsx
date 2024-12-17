@@ -28,7 +28,7 @@ export const InstagramReels = () => {
     <section id="instagram-reels" className="py-20 bg-gray-800 font-prompt">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl font-bold text-gray-50 mb-8">
-          {language === 'th' ? 'วิดีโอจาก Instagram' : 'Instagram Reels'}
+          {language === 'th' ? 'วิดีโอจาก Dive with Bear Instagram' : 'Instagram Dive with Bear Reels'}
         </h2>
         <a
           href="https://www.instagram.com/divewithbear"
@@ -36,7 +36,7 @@ export const InstagramReels = () => {
           rel="noopener noreferrer"
           className="inline-block px-6 py-3 mb-8 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
         >
-          {language === 'th' ? 'ไปที่ Instagram หลัก' : 'Visit Main Instagram'}
+          {language === 'th' ? 'ไปที่ Dive with Bear Instagram' : 'Visit Dive with Bear Instagram'}
         </a>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {reels.length > 0 ? (
