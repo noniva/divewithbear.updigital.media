@@ -8,6 +8,7 @@ import  Bubbles  from './components/sections/Bubbles';
 import ReactGA from 'react-ga4';
 import PDPAConsent from './components/sections/PDPAConsent';
 import { LanguageProvider } from './components/sections/LanguageContext';
+import { InstagramReels } from './components/sections/InstagramReels';
 
 ReactGA.initialize('G-JGXQR2RHLZ'); 
 
@@ -20,6 +21,7 @@ function App() {
       <main className="">
         <Hero />
         <Services />
+        <InstagramReels />
         <About />
         <Contact />
       </main>
