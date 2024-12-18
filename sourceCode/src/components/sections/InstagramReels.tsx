@@ -57,11 +57,12 @@ export const InstagramReels = () => {
           {visibleReels.length > 0 ? (
             visibleReels.map((reel) => (
               <div key={reel.id} className="rounded-lg shadow-lg overflow-hidden flex flex-col items-center">
-                <div className="w-full">
+                <div className="w-full bg-gray-700" style={{ aspectRatio: '16/9' }}>
                   <video
                     src={reel.media_url}
                     controls
-                    className="w-full h-100 object-cover"
+                    className="w-full h-full object-cover"
+                    style={{ display: 'block' }}
                   />
                 </div>
                 <div className="p-4 bg-gray-900 text-gray-50 w-full">
@@ -73,7 +74,7 @@ export const InstagramReels = () => {
                         ? `${reel.caption.substring(0, 50)}... `
                         : reel.caption
                       : language === 'th' ? 'วิดีโอจากอินสตาแกรม' : 'Instagram Reel'}
-                    {reel.caption && reel.caption.length > 120 && (
+                    {reel.caption && reel.caption.length > 50 && (
                       <button
                         onClick={() => toggleCaption(reel.id)}
                         className="text-blue-400 ml-2 hover:underline"
